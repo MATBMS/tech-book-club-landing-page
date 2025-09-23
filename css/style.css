@@ -2,8 +2,8 @@
 /* ==        BASE             == */
 /* ============================= */
 @import url(./base/reset.css);
-@import url(./base/typography.css);
 @import url(./base/variables.css);
+@import url(./base/typography.css);
 @import url(./base/animation.css);
 
 /* ============================= */
@@ -22,6 +22,7 @@
 /* ============================= */
 /* ==       SECTIONS          == */
 /* ============================= */
+@import url(./sections/header.css);
 @import url(./sections/home.css);
 @import url(./sections/about.css);
 @import url(./sections/contact.css);

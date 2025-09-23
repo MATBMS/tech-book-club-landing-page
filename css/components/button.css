@@ -1,0 +1,57 @@
+.btn-primary {
+  /* layout */
+  display: inline-flex;
+  padding: var(--spacing-250, 20px) var(--spacing-300, 24px);
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-200, 16px);
+  /* style */
+  border-radius: 8px;
+  border: 2px solid var(--colors-neutral-900, #062630);
+  background: var(--colors-light-salmon-50, #FFF5EF);
+  transition: all .3s;
+  /* typography */
+  color: var(--colors-neutral-900, #062630);
+
+  /* Text Preset 6 */
+  font-family: "Martian";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  /* 23.4px */
+  letter-spacing: -1px;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(90deg, var(--colors-light-salmon-100, #FFE2D1) 0%, var(--colors-light-salmon-50, #FFF5EF) 100%);
+}
+
+.btn-primary:focus {
+  background: linear-gradient(90deg, var(--colors-light-salmon-100, #FFE2D1) 0%, var(--colors-light-salmon-50, #FFF5EF) 100%);
+  box-shadow: 0 0 0 3px #FFF, 0 0 0 5px var(--colors-neutral-700, #385159);
+}
+
+/* add a down icon */
+.btn-down::after {
+  content: "";
+  width: 24px;
+  /* matches font size */
+  aspect-ratio: 1;
+  background-color: currentColor;
+  /* icon color = text color */
+  -webkit-mask: url("../../icons/icon-arrow-down.svg") no-repeat center / contain;
+  mask: url("../../icons/icon-arrow-down.svg") no-repeat center / contain;
+}
+
+/* add a up icon */
+.btn-up::after {
+  content: "";
+  width: 24px;
+  /* matches font size */
+  aspect-ratio: 1;
+  background-color: currentColor;
+  /* icon color = text color */
+  -webkit-mask: url("../../icons/icon-arrow-up.svg") no-repeat center / contain;
+  mask: url("../../icons/icon-arrow-up.svg") no-repeat center / contain;
+}
