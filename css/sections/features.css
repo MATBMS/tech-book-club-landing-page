@@ -1,0 +1,37 @@
+/* feature container */
+.features-container {
+  width: 1170px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--spacing-1000, 80px);
+}
+
+/* features image */
+.features-img {
+  width: 560px;
+  height: 520px;
+  border-radius: 20px;
+}
+
+/* features list */
+.features-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 34px;
+}
+
+.features-list {
+  display: flex;
+  width: 431px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+}

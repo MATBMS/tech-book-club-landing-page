@@ -23,6 +23,6 @@
 /* ==       SECTIONS          == */
 /* ============================= */
 @import url(./sections/header.css);
-@import url(./sections/home.css);
+@import url(./sections/features.css);
 @import url(./sections/about.css);
 @import url(./sections/contact.css);

@@ -10,6 +10,15 @@ header {
   justify-content: center;
   align-items: center;
   position: relative;
+  padding-top: 32px;
+  padding-bottom: 80px;
+}
+
+.header-container {
+  width: 1170px;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-800, 64px);
 }
 
 /* navbar */

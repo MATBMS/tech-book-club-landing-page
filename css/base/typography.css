@@ -25,6 +25,17 @@ h1,
   letter-spacing: -2px;
 }
 
+h2,
+.text-preset-2 {
+  font-family: "Martian";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: -2px;
+  color: var(--colors-neutral-900, #062630);
+}
+
 /* paragraph */
 
 .text-preset-5 {
