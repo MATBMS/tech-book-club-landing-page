@@ -3,7 +3,7 @@ header {
   height: 820px;
   width: 100vw;
   background-color: #FAF5F3;
-  background-image: url(../../icons/pattern-dark-bg.svg);
+  background-image: url(../../icons/pattern-light-bg.svg);
   background-size: cover;
   display: flex;
   flex-direction: column;

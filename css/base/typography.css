@@ -48,6 +48,16 @@ h2,
   color: var(--color-neutral-700);
 }
 
+.text-preset-6 {
+  font-family: "Martian";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: -1px;
+  color: var(--colors-neutral-900, #062630);
+}
+
 .text-preset-7 {
   color: var(--colors-neutral-700, #385159);
   text-align: center;

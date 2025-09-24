@@ -1,0 +1,73 @@
+/* container */
+.journey-container {
+  /* layout */
+  display: flex;
+  width: 1170px;
+  height: 454.022px;
+  padding: var(--spacing-1000, 80px) 0;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-800, 64px);
+  /* style */
+  border-radius: var(--spacing-150, 12px);
+  background-color: var(--colors-neutral-100, #FAF5F3);
+  background-image: url("../../icons/pattern-light-bg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.journey-container h2 {
+  width: 512px;
+  text-align: center;
+}
+
+/* steps */
+.steps-container {
+  display: flex;
+  width: 1050px;
+  height: 110.022px;
+  align-items: center;
+  gap: var(--spacing-600, 48px);
+}
+
+.step {
+  width: 227px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-300, 24px);
+}
+
+.step-counter {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.step-counter p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  border: 2px solid var(--colors-neutral-900, #062630);
+}
+
+
+/* pattern glow */
+.journey-pattern-glow {
+  /* layout */
+  width: 684px;
+  height: 684px;
+  /* position */
+  position: absolute;
+  right: -250px;
+  bottom: -300px;
+}
