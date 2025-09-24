@@ -5,6 +5,7 @@
   flex-direction: row;
   align-items: center;
   gap: var(--spacing-1000, 80px);
+  position: relative;
 }
 
 /* technologies text */
@@ -40,4 +41,12 @@
   width: 560px;
   height: 520px;
   border-radius: 20px;
+}
+
+/* logos tech */
+.logos-tech {
+  position: absolute;
+  top: 80%;
+  left: 50.5%;
+  transform: translateX(-50%) translateY(-50%);
 }
