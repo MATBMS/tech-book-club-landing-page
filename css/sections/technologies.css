@@ -1,0 +1,43 @@
+/* technologie container */
+.technologies-container {
+  width: 1170px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--spacing-1000, 80px);
+}
+
+/* technologies text */
+.technologies-text {
+  display: flex;
+  width: 530px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.highlight {
+  position: relative;
+  /* creates positioning context */
+  display: inline-block;
+  /* ensures span can hold positioned elements */
+}
+
+.highlight::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(-0.9em);
+  width: 158px;
+  aspect-ratio: 1;
+  background-color: #FEA36F;
+  -webkit-mask: url("../../icons/pattern-circle.png") no-repeat center / contain;
+  mask: url("../../icons/pattern-circle.png") no-repeat center / contain;
+}
+
+/* technologies image */
+.technologies-img {
+  width: 560px;
+  height: 520px;
+  border-radius: 20px;
+}
