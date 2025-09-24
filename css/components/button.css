@@ -10,17 +10,16 @@
   border: 2px solid var(--colors-neutral-900, #062630);
   background: var(--colors-light-salmon-50, #FFF5EF);
   transition: all .3s;
+  z-index: 2;
   /* typography */
-  color: var(--colors-neutral-900, #062630);
-
-  /* Text Preset 6 */
   font-family: "Martian";
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
   line-height: 130%;
-  /* 23.4px */
+  text-transform: uppercase;
   letter-spacing: -1px;
+  color: var(--colors-neutral-900, #062630);
 }
 
 .btn-primary:hover {
