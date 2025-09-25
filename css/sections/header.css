@@ -1,6 +1,6 @@
 /* header */
 header {
-  height: 820px;
+  min-height: 820px;
   width: 100vw;
   background-color: #FAF5F3;
   background-image: url(../../icons/pattern-light-bg.svg);
@@ -9,11 +9,13 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
   padding-top: 32px;
   padding-bottom: 80px;
+  position: relative;
+  overflow: hidden;
 }
 
+.header-nav,
 .header-container {
   width: 1170px;
   display: flex;
@@ -83,6 +85,7 @@ header {
   background-image: url(../../images/image-hero-desktop.webp);
   background-size: cover;
   border-radius: 8px;
+  z-index: 2;
 }
 
 .header-img {
@@ -91,13 +94,15 @@ header {
 }
 
 /* header-pattern-glow */
-
-.header-pattern-glow {
-  /* layout */
+header::after {
+  content: '';
   width: 684px;
   height: 684px;
-  /* position */
   position: absolute;
-  right: -300px;
-  bottom: -200px;
+  right: -200px;
+  bottom: -250px;
+  background-image: url(../../icons/pattern-glow.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
 }
