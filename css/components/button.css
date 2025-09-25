@@ -1,3 +1,4 @@
+/* primary */
 .btn-primary {
   /* layout */
   display: inline-flex;
@@ -53,4 +54,33 @@
   /* icon color = text color */
   -webkit-mask: url("../../icons/icon-arrow-up.svg") no-repeat center / contain;
   mask: url("../../icons/icon-arrow-up.svg") no-repeat center / contain;
+}
+
+/* secondary */
+.btn-secondary {
+  /* layout */
+  display: inline-flex;
+  padding: var(--spacing-250, 20px) var(--spacing-300, 24px);
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-200, 16px);
+  /* style */
+  border-radius: 8px;
+  border: 2px solid var(--colors-neutral-0, #FFF);
+  /* typography */
+  font-family: "Martian";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: -1px;
+  color: var(--colors-neutral-0, #FFF);
+}
+
+.btn-secondary:hover {
+  background: linear-gradient(90deg, var(--colors-neutral-700, #385159) 0%, var(--colors-neutral-900, #062630) 100%);
+}
+
+.btn-secondary:focus {
+  box-shadow: 0 0 0 3px var(--colors-neutral-900, #062630), 0 0 0 5px var(--colors-neutral-200, #E6E1DF);
 }
