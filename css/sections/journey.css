@@ -2,8 +2,9 @@
 .journey-container {
   /* layout */
   display: flex;
-  width: 1170px;
-  height: 454.022px;
+  width: calc((1170 / 1440) * 100vw);
+  max-width: 1170px;
+  height: auto;
   padding: var(--spacing-1000, 80px) 0;
   flex-direction: column;
   align-items: center;
@@ -27,14 +28,18 @@
 /* steps */
 .steps-container {
   display: flex;
-  width: 1050px;
-  height: 110.022px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: calc((1050 / 1440) * 100vw);
+  max-width: 1050px;
+  height: auto;
   align-items: center;
   gap: var(--spacing-600, 48px);
 }
 
 .step {
-  width: 227px;
+  width: calc((227 / 1440) * 100vw);
+  max-width: 227px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -71,3 +76,34 @@
   right: -250px;
   bottom: -300px;
 }
+
+/* TABLET */
+@media (max-width: 768px) {
+  .journey-container {
+    width: calc((704 / 768) * 100vw);
+    max-width: 704px;
+  }
+
+  .journey-container h2 {
+    text-align: left;
+    width: calc((640 / 768) * 100vw);
+    max-width: 640px;
+  }
+
+  .steps-container {
+    width: calc((640 / 768) * 100vw);
+    max-width: 640px;
+  }
+
+  .step {
+    width: calc((640 / 768) * 100vw);
+    max-width: 640px;
+  }
+
+  .journey-pattern-arrow {
+    display: none;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 375px) {}

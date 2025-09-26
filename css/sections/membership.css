@@ -1,7 +1,8 @@
 /* container */
 .membership-container {
   display: flex;
-  width: 970px;
+  width: calc((970 / 1440) * 100vw);
+  max-width: 970px;
   flex-direction: column;
   align-items: center;
   gap: var(--spacing-800, 64px);
@@ -11,15 +12,17 @@
 .options-container {
   display: flex;
   align-items: center;
-  gap: 24px;
   align-self: stretch;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 
 /* card */
 .option-card {
   /* layout */
   display: flex;
-  width: 286px;
+  width: calc((286 / 1440) * 100vw);
+  max-width: 286px;
   padding: var(--spacing-300, 24px);
   flex-direction: column;
   justify-content: center;
@@ -78,7 +81,8 @@ hr {
 
 /* card highlight */
 .card-highlight {
-  width: 350px;
+  width: calc((350 / 1440) * 100vw);
+  max-width: 350px;
   padding: var(--spacing-500, 40px) var(--spacing-300, 24px);
   background: var(--colors-neutral-100, #FAF5F3);
   position: relative;
@@ -94,3 +98,24 @@ hr {
   right: -100px;
   bottom: -300px;
 }
+
+/* TABLET */
+@media (max-width: 1170px) {
+  .membership-container {
+    width: calc((704 / 768) * 100vw);
+    max-width: 704px;
+    align-items: flex-start;
+  }
+
+  .option-card {
+    width: calc((340 / 768) * 100vw);
+    max-width: 340px;
+  }
+
+  .card-highlight {
+    padding: var(--spacing-300, 24px);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 375px) {}

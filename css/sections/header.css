@@ -7,7 +7,7 @@ header {
   background-size: cover;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   padding-top: 32px;
   padding-bottom: 80px;
@@ -19,6 +19,7 @@ header {
 .header-container {
   width: 1170px;
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: var(--spacing-800, 64px);
 }
@@ -82,15 +83,11 @@ header {
 .header-right {
   width: 540px;
   height: 606px;
+  background: #062630;
   background-image: url(../../images/image-hero-desktop.webp);
   background-size: cover;
   border-radius: 8px;
   z-index: 2;
-}
-
-.header-img {
-  width: 912.393px;
-  height: 607px;
 }
 
 /* header-pattern-glow */
@@ -106,3 +103,46 @@ header::after {
   background-repeat: no-repeat;
   z-index: 1;
 }
+
+/* SMALL DESKTOP */
+@media (max-width: 1170px) {
+  header {
+    min-height: 1560px;
+    width: 100vw;
+  }
+
+  .header-nav,
+  .header-container {
+    width: calc((704 / 768) * 100vw);
+    flex-direction: column;
+    gap: var(--spacing-800, 64px);
+  }
+
+  .header-left {
+    width: 703px;
+    height: 491px;
+  }
+
+  .header-logo {
+    margin-bottom: var(--spacing-800);
+  }
+
+  .header-right {
+    width: 704px;
+    height: 790px;
+  }
+}
+
+/* TABLET */
+@media (max-width: 768px) {
+  .header-nav {
+    align-items: flex-start;
+  }
+
+  .header-container {
+    align-items: flex-start;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 375px) {}

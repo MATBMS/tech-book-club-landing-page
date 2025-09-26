@@ -1,6 +1,7 @@
-/* technologie container */
+/* container */
 .technologies-container {
-  width: 1170px;
+  width: calc((1170 / 1440) * 100vw);
+  max-width: 1170px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -8,7 +9,7 @@
   position: relative;
 }
 
-/* technologies text */
+/* text */
 .technologies-text {
   display: flex;
   width: 530px;
@@ -36,7 +37,7 @@
   mask: url("../../icons/pattern-circle.png") no-repeat center / contain;
 }
 
-/* technologies image */
+/* image */
 .technologies-img {
   width: 560px;
   height: 520px;
@@ -50,3 +51,39 @@
   left: 50.5%;
   transform: translateX(-50%) translateY(-50%);
 }
+
+/* TABLET */
+@media (max-width: 768px) {
+
+  /* container */
+  .technologies-container {
+    width: calc((704 / 768) * 100vw);
+    flex-direction: column;
+    gap: var(--spacing-500, 40px);
+  }
+
+  /* text */
+  .technologies-text {
+    width: 704px;
+  }
+
+  .technologies-text h2 {
+    width: 534px;
+  }
+
+  /* image */
+  .technologies-img {
+    width: 704px;
+    height: 653.714px;
+  }
+
+  /* logos tech */
+  .logos-tech {
+    top: 87%;
+    left: 87%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 375px) {}

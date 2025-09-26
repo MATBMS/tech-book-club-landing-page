@@ -1,13 +1,14 @@
-/* feature container */
+/* container */
 .features-container {
-  width: 1170px;
+  width: calc((1170 / 1440) * 100vw);
+  max-width: 1170px;
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: var(--spacing-1000, 80px);
 }
 
-/* features image */
+/* image */
 .features-img {
   width: 560px;
   height: 520px;
@@ -35,3 +36,33 @@
   flex-direction: row;
   gap: 14px;
 }
+
+/* SMALL DESKTOP */
+@media (max-width: 1170px) {
+
+  /* container */
+  .features-container {
+    width: calc((704 / 768) * 100vw);
+    flex-direction: column;
+    flex-flow: column-reverse;
+    gap: var(--spacing-1000, 80px);
+  }
+
+  /* image */
+  .features-img {
+    width: 704px;
+    height: 654px;
+  }
+
+  /* features list */
+  .features-list {
+    width: 704px;
+  }
+
+  .features-text h2 {
+    width: 625px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 375px) {}

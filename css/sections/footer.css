@@ -17,7 +17,8 @@ footer {
 /* content */
 .footer-content {
   display: flex;
-  width: 753px;
+  width: calc((753 / 1440) * 100vw);
+  max-width: 753px;
   flex-direction: column;
   align-items: center;
   gap: var(--spacing-500, 40px);
@@ -70,7 +71,8 @@ footer {
 .footer-nav {
   /* layout */
   display: flex;
-  width: 1170px;
+  width: 100vw;
+  max-width: 1170px;
   padding: var(--spacing-300, 24px) 0;
   justify-content: space-between;
   align-items: flex-start;
@@ -91,3 +93,20 @@ footer {
   width: 22px;
   height: 22px;
 }
+
+/* SMALL DESKTOP */
+@media (max-width: 1170px) {
+  .footer-nav {
+    padding: var(--spacing-300, 24px) var(--spacing-400, 32px);
+  }
+}
+
+/* TABLET */
+@media (max-width: 768px) {
+  .footer-content {
+    width: calc((704 / 768) * 100vw);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 375px) {}

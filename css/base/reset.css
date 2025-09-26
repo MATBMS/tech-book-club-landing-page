@@ -1,6 +1,9 @@
 * {
   margin: 0;
   padding: 0;
+  /* 
+    With 'border-box', the padding and border are included within the element's total width and height, making layout calculations more intuitive and preventing elements from unexpectedly overflowing their containers.
+  */
   box-sizing: border-box;
 }
 
