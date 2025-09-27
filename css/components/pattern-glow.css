@@ -1,0 +1,20 @@
+.pattern-glow {
+  /* layout */
+  width: 684px;
+  height: 684px;
+  /* position */
+  position: absolute;
+  right: -250px;
+  bottom: -300px;
+}
+
+/* pattern glow */
+.journey-pattern-glow {
+  /* layout */
+  width: 684px;
+  height: 684px;
+  /* position */
+  position: absolute;
+  right: -250px;
+  bottom: -300px;
+}

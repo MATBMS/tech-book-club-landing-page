@@ -14,47 +14,70 @@
 
   <body>
     <header>
-      <div class="header-nav">
-        <img src="./icons/logo.svg" alt="header logo" class="header-logo">
-      </div>
-      <div class="header-container">
-        <div class="header-left">
-          <div class="header-text">
-            <h1 class="text-gradient">Join the ultimate tech book club</h1>
-            <p class="text-preset-5">
-              Turn your reading time into learning time with fellow tech enthusiasts.
-              Get curated recommendations, join vibrant discussions, and level up your
-              skills one chapter at a time.
-            </p>
-          </div>
-          <div class="header-cta">
-            <a href="#membership" class="btn-primary btn-down">Review membership options</a>
-          </div>
-          <div class="header-testimonials">
-            <img src="./images/image-avatars.webp" alt="200+ developers already joined" class="header-avatars">
-            <div class="rating">
-              <div class="stars-container">
-                <img src="./icons/icon-star.svg" alt="star">
-                <img src="./icons/icon-star.svg" alt="star">
-                <img src="./icons/icon-star.svg" alt="star">
-                <img src="./icons/icon-star.svg" alt="star">
-                <img src="./icons/icon-star.svg" alt="star">
+      <div class="header-background">
+        <div class="header-container">
+          <nav>
+            <img src="./icons/logo.svg" alt="header logo" class="header-logo">
+          </nav>
+          <div class="hero">
+            <div class="hero-content">
+              <div class="hero-text">
+                <h1 class="text-gradient">Join the ultimate tech book club</h1>
+                <p class="text-preset-5">
+                  Turn your reading time into learning time with fellow tech enthusiasts.
+                  Get curated recommendations, join vibrant discussions, and level up your
+                  skills one chapter at a time.
+                </p>
               </div>
-              <div class="testimonials-text">
-                <p class="text-preset-7">200+ developers joined already</p>
+              <div class="hero-cta">
+                <a href="#membership" class="btn-primary btn-down">Review membership options</a>
+              </div>
+              <div class="dev-testimonials">
+                <img src="./images/image-avatars.webp" alt="200+ developers already joined" class="dev-avatars">
+                <div class="rating">
+                  <div class="stars-container">
+                    <img src="./icons/icon-star.svg" alt="star">
+                    <img src="./icons/icon-star.svg" alt="star">
+                    <img src="./icons/icon-star.svg" alt="star">
+                    <img src="./icons/icon-star.svg" alt="star">
+                    <img src="./icons/icon-star.svg" alt="star">
+                  </div>
+                  <div class="testimonials-text">
+                    <p class="text-preset-7">200+ developers joined already</p>
+                  </div>
+                </div>
               </div>
             </div>
+            <!-- end hero content -->
+            <picture>
+              <!-- Mobile -->
+              <source srcset="./images/image-hero-mobile.webp" media="(max-width: 375px)">
+
+              <!-- Tablet -->
+              <source srcset="./images/image-hero-tablet.webp" media="(max-width: 768px)">
+
+              <!-- Default (Desktop) -->
+              <img src="./images/image-hero-desktop.webp" alt="Hero" class="hero-img">
+            </picture>
           </div>
+          <!-- end hero -->
+          <img src="./icons/pattern-glow.svg" alt="pattern glow" class="pattern-glow">
         </div>
-        <div class="header-right">
-        </div>
+        <!-- end header container -->
       </div>
     </header>
 
     <main>
       <section id="features">
         <div class="features-container">
-          <img src="./images/image-read-together-desktop.webp" alt="read together" class="features-img">
+          <picture>
+            <!-- Mobile -->
+            <source srcset="./images/image-read-together-mobile.webp" media="(max-width: 375px)">
+            <!-- Tablet -->
+            <source srcset="./images/image-read-together-tablet.webp" media="(max-width: 768px)">
+            <!-- Default (Desktop) -->
+            <img src="./images/image-read-together-desktop.webp" alt="read together" class="features-img">
+          </picture>
           <div class="features-text">
             <h2>Read together, grow together</h2>
             <div class="features-list">
@@ -87,7 +110,14 @@
               everything in between. Our discussions blend technical depth with practical applications.
             </p>
           </div>
-          <img src="./images/image-not-average-desktop.webp" alt="people book club" class="technologies-img">
+          <picture>
+            <!-- Mobile -->
+            <source srcset="./images/image-not-average-mobile.webp" media="(max-width: 375px)">
+            <!-- Tablet -->
+            <source srcset="./images/image-not-average-tablet.webp" media="(max-width: 768px)">
+            <!-- Default (Desktop) -->
+            <img src="./images/image-not-average-desktop.webp" alt="people book club" class="technologies-img">
+          </picture>
           <img src="./icons/logos-tech.svg" alt="logos tech" class="logos-tech">
         </div>
       </section>
@@ -221,8 +251,8 @@
         <h2>Ready to debug your reading list?</h2>
         <div class="footer-cta">
           <a href="#membership" class="btn-secondary btn-up">Review membership options</a>
-          <div class="footer-testimonials">
-            <img src="./images/image-avatars.webp" alt="200+ developers already joined" class="footer-avatars">
+          <div class="dev-testimonials">
+            <img src="./images/image-avatars.webp" alt="200+ developers already joined" class="dev-avatars">
             <div class="rating">
               <div class="stars-container">
                 <img src="./icons/icon-star.svg" alt="star">

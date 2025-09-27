@@ -1,0 +1,15 @@
+/* testimonials */
+.dev-testimonials {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-150);
+}
+
+#footer .dev-testimonials p {
+  color: var(--color-neutral-0);
+}
+
+.dev-avatars {
+  width: 110px;
+  height: 40px;
+}

@@ -65,18 +65,6 @@
   border: 2px solid var(--colors-neutral-900, #062630);
 }
 
-
-/* pattern glow */
-.journey-pattern-glow {
-  /* layout */
-  width: 684px;
-  height: 684px;
-  /* position */
-  position: absolute;
-  right: -250px;
-  bottom: -300px;
-}
-
 /* TABLET */
 @media (max-width: 768px) {
   .journey-container {

@@ -37,22 +37,6 @@ footer {
   gap: var(--spacing-300, 24px);
 }
 
-/* testimonials */
-.footer-testimonials {
-  display: flex;
-  flex-direction: row;
-  gap: var(--spacing-150);
-}
-
-.footer-testimonials p {
-  color: var(--color-neutral-0);
-}
-
-.footer-avatars {
-  width: 110px;
-  height: 40px;
-}
-
 /* rating */
 .footer-rating {
   display: flex;

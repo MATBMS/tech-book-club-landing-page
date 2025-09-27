@@ -54,3 +54,29 @@
   --radius-24: 24px;
   --radius-full: 999px;
 }
+
+/* LAYOUT */
+:root {
+  --container-width: calc((1174 / 1440) * 100vw);
+}
+
+/* SMALL DESKTOP */
+@media (max-width: 1170px) {
+  :root {
+    --container-width: calc((1100 / 1170) * 100vw);
+  }
+}
+
+/* TABLET */
+@media (max-width: 768px) {
+  :root {
+    --container-width: calc((704 / 768) * 100vw);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 375px) {
+  :root {
+    --container-width: calc((343 / 375) * 100vw);
+  }
+}

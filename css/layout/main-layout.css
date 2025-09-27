@@ -8,6 +8,14 @@ main {
   gap: var(--spacing-1200, 120px);
 }
 
+/* DESKTOP */
+
+@media (max-width: 1440px) {}
+
+/* SMALL DESKTOP */
+
+@media (max-width: 1170px) {}
+
 /* TABLET */
 
 @media (max-width: 768px) {
