@@ -66,7 +66,7 @@
   }
 
   .technologies-text h2 {
-    width: 534px;
+    width: calc((543 / 768) * 100vw);
   }
 
   /* image */

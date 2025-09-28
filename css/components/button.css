@@ -89,7 +89,7 @@
 @media (max-width: 768px) {}
 
 /* MOBILE */
-@media (max-width: 375px) {
+@media (max-width: 415px) {
 
   .btn-primary,
   .btn-secondary {

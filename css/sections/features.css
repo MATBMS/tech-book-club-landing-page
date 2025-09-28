@@ -58,18 +58,11 @@
   }
 
   /* features list */
+  .features-title,
   .features-list {
     width: var(--container-width);
-  }
-
-  .features-text h2 {
-    width: 625px;
   }
 }
 
 /* MOBILE */
-@media (max-width: 375px) {
-  .features-text h2 {
-    width: 343px;
-  }
-}
+@media (max-width: 375px) {}

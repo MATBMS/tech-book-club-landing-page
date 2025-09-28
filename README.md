@@ -40,31 +40,18 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
+I learned the importance of thoroughly analyzing the Figma design before starting to code. Not spending enough time understanding the layout and planning my code structure led to wasted time and unnecessary rework. Careful preparation makes the development process much smoother.
 
 ## Responsive design
 
 The site is responsive, with layouts for mobile and tablet devices at the following breakpoints:
 
 ```css
+/* SMALL DESKTOP */
+
+@media (max-width: 1170px) {
+}
+
 /* TABLET */
 
 @media (max-width: 768px) {
