@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/MATBMS/tech-book-club-landing-page-master)
-- Live Site URL: [Add live site URL here](https://matbms-tech-book-club-landing-page-master.netlify.app/)
+- Live Site URL: [Add live site URL here](https://matbms-tech-book-club-landing-page.netlify.app/)
 
 ## My process
 
