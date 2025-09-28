@@ -68,20 +68,15 @@
 /* TABLET */
 @media (max-width: 768px) {
 
-  .journey-container h2 {
-    text-align: left;
-    width: calc((640 / 768) * 100vw);
-    max-width: 640px;
-  }
-
-  .steps-container {
-    width: calc((640 / 768) * 100vw);
-    max-width: 640px;
-  }
-
+  .journey-container h2,
+  .steps-container,
   .step {
     width: calc((640 / 768) * 100vw);
-    max-width: 640px;
+    max-width: none;
+  }
+
+  .journey-container h2 {
+    text-align: left;
   }
 
   .journey-pattern-arrow {
@@ -90,4 +85,18 @@
 }
 
 /* MOBILE */
-@media (max-width: 375px) {}
+@media (max-width: 375px) {
+
+  .journey-container {
+    padding: var(--spacing-800, 64px) var(--spacing-200, 16px);
+  }
+
+  .journey-container h2,
+  .steps-container {
+    width: 308px;
+  }
+
+  .step {
+    width: 100%;
+  }
+}

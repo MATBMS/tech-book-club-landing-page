@@ -28,4 +28,10 @@ main {
 
 /* MOBILE */
 
-@media (max-width: 375px) {}
+@media (max-width: 375px) {
+
+  body,
+  main {
+    gap: var(--spacing-800, 64px);
+  }
+}

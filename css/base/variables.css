@@ -70,7 +70,7 @@
 /* TABLET */
 @media (max-width: 768px) {
   :root {
-    --container-width: calc((704 / 768) * 100vw);
+    --container-width: calc((703 / 768) * 100vw);
   }
 }
 

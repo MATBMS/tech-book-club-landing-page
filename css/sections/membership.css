@@ -89,16 +89,6 @@ hr {
   overflow: hidden;
 }
 
-.card-pattern-glow {
-  /* layout */
-  width: 684px;
-  height: 684px;
-  /* position */
-  position: absolute;
-  right: -100px;
-  bottom: -300px;
-}
-
 /* TABLET */
 @media (max-width: 1170px) {
   .membership-container {
@@ -121,5 +111,9 @@ hr {
 @media (max-width: 375px) {
   .option-card {
     width: var(--container-width);
+  }
+
+  .membership-container {
+    gap: var(--spacing-300, 24px);
   }
 }

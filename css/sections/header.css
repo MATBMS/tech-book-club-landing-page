@@ -71,10 +71,6 @@ header {
 /* TABLET */
 @media (max-width: 768px) {
 
-  .hero-text {
-    width: 703px;
-  }
-
   .hero {
     flex-direction: column;
   }
@@ -89,4 +85,8 @@ header {
 }
 
 /* MOBILE */
-@media (max-width: 375px) {}
+@media (max-width: 375px) {
+  .header-container {
+    gap: var(--spacing-600, 48px);
+  }
+}

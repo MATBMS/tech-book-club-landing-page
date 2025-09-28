@@ -1,3 +1,4 @@
+/* header */
 .pattern-glow {
   /* layout */
   width: 684px;
@@ -8,7 +9,7 @@
   bottom: -300px;
 }
 
-/* pattern glow */
+/* journey */
 .journey-pattern-glow {
   /* layout */
   width: 684px;
@@ -19,12 +20,33 @@
   bottom: -300px;
 }
 
+/* membership */
+.card-pattern-glow {
+  /* layout */
+  width: 684px;
+  height: 684px;
+  /* position */
+  position: absolute;
+  right: -100px;
+  bottom: -300px;
+}
+
 /* TABLET */
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+  .journey-pattern-glow {
+    right: -250px;
+    bottom: -200px;
+  }
+}
 
 /* MOBILE */
 @media (max-width: 375px) {
   .pattern-glow {
     visibility: hidden;
+  }
+
+  .journey-pattern-glow {
+    right: -200px;
+    bottom: -400px;
   }
 }
