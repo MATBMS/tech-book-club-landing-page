@@ -68,12 +68,12 @@ header {
   z-index: 2;
 }
 
-/* SMALL DESKTOP */
-
-@media (max-width: 1170px) {}
-
 /* TABLET */
 @media (max-width: 768px) {
+
+  .hero-text {
+    width: 703px;
+  }
 
   .hero {
     flex-direction: column;

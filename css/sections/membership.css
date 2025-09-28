@@ -118,4 +118,8 @@ hr {
 }
 
 /* MOBILE */
-@media (max-width: 375px) {}
+@media (max-width: 375px) {
+  .option-card {
+    width: var(--container-width);
+  }
+}

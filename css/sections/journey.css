@@ -2,7 +2,7 @@
 .journey-container {
   /* layout */
   display: flex;
-  width: calc((1170 / 1440) * 100vw);
+  width: var(--container-width);
   max-width: 1170px;
   height: auto;
   padding: var(--spacing-1000, 80px) 0;
@@ -38,8 +38,8 @@
 }
 
 .step {
-  width: calc((227 / 1440) * 100vw);
-  max-width: 227px;
+  width: calc((226 / 1440) * 100vw);
+  max-width: 226px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -67,10 +67,6 @@
 
 /* TABLET */
 @media (max-width: 768px) {
-  .journey-container {
-    width: calc((704 / 768) * 100vw);
-    max-width: 704px;
-  }
 
   .journey-container h2 {
     text-align: left;

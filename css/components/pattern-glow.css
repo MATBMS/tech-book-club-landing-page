@@ -18,3 +18,13 @@
   right: -250px;
   bottom: -300px;
 }
+
+/* TABLET */
+@media (max-width: 768px) {}
+
+/* MOBILE */
+@media (max-width: 375px) {
+  .pattern-glow {
+    visibility: hidden;
+  }
+}

@@ -84,3 +84,15 @@
 .btn-secondary:focus {
   box-shadow: 0 0 0 3px var(--colors-neutral-900, #062630), 0 0 0 5px var(--colors-neutral-200, #E6E1DF);
 }
+
+/* TABLET */
+@media (max-width: 768px) {}
+
+/* MOBILE */
+@media (max-width: 375px) {
+
+  .btn-primary,
+  .btn-secondary {
+    font-size: 15px;
+  }
+}
